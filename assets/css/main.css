@@ -1,9 +1,289 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@media only screen and (min-width: 768px) {
 
-@import url('variables.css');
-@import url('base.css');
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+.gsmcontainer{
+    display: none;
+}
 
-@import url('components/flex-grid.css');
-@import url('components/buttons.css');
-@import url('components/forms.css');
+/*Header*/
 
+.afmetingen{
+    background-color: var(--secondary-background-color);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+.col-7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+
+}
+h1{
+    font-family: var(--header-font);
+    text-align: left;
+    vertical-align: middle; 
+    font-size: 50pt;
+    color: white;
+    height: 120px;
+} 
+nav{
+    font-family: var(--header-font);
+    font-size: 25pt;
+    color: white;
+}
+
+.row-header{
+    height: 120px;
+}
+
+
+li{
+    display: inline;
+    padding: 25px;
+}
+
+.achtergrond-header{
+    height: 120px;
+    width: 100vw;
+    background-color: var(--background-color);
+}
+
+#zoeken{
+    height: 25pt;
+    border: 1pt solid;
+    border-color:var(--important-color);
+    font-family: var(--header-font);
+    font-size: 25pt;
+    color: black;
+    width:200px;
+    padding: 10px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: var(--important-color);
+    transition: 0.3s; 
+}
+
+
+/*Inhoud*/
+
+.row-inhoud{
+    height: 128px;
+    font-family:var(--text-font);
+    font-size: 17pt;
+    box-sizing:border-box;
+}
+
+.reservatie{
+    height:396px;
+}
+
+.row-reservatie{
+    background-image: url(../images/jonatan-moerman-679098-unsplash.jpg);
+    background-size: 100% 100%;
+    height: 396px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.kader{
+    width: 100%;
+    height: 225px;
+    border-radius: 10pt;
+    background-color: white;
+    opacity: 0.85;
+    font-family:var(--text-font);
+}
+
+.plaats{
+    height: 56px;
+    border-bottom: 2pt solid var(--important-color);
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.leegte{
+    height: 40px;
+}
+
+.footer{
+    background-color: var(--background-color);
+    height: 85px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footertekst{
+    font-family: var(--text-font);
+    color: white;
+    padding-left: 10px;
+    font-size: 12pt;
+}
+
+.socialmedia{
+    font-family: var(--text-font);
+    color:white;
+    font-size: 12pt;
+    padding-left: 10px;
+}
+
+.icon{
+    height: 12pt;
+    width: 12pt;
+}
+
+.emailflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#emailinput{
+    border: 2pt solid var(--important-color);
+    font-family: var(--text-font);
+   
+}
+#emailknop{
+    border: none;
+    background-color: var(--important-color);
+    color: white;
+    padding: 2px;
+   
+}
+
+.achtergrond-footer{
+    height: 85px;
+    width: 100vw;
+    background-color: var(--background-color);
+}
+
+.ingeefkaders{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.ingeefkaderskaders{
+    border: 1pt solid var(--important-color);
+    margin-bottom: 15px;
+}
+
+.ingeefkadersbutton{
+    background-color: var(--important-color);
+    font-family: var(--text-font);
+    width: 80px;
+    height: 20px;
+    border: none;
+    color: white;
+}
+}
+
+@media screen and (max-width: 375px){ 
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .afmetingen{
+        display: none;
+    }
+    .introtekst{
+        font-family: var(--text-font);
+        font-size: 12pt;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .gsmcontainer{
+        height: 667px;
+        width: 375px;
+        border: solid 1pt var(--important-color);
+        margin: 0 auto;
+        background-color: var(--secondary-background-color);
+        box-sizing: border-box;
+    }
+    
+    .header{
+        height: 84px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: var(--header-font);
+        color: white;
+        font-size: 35px;
+        background-color: var(--background-color);
+    }
+    
+    .introtekst{
+        height: 93px;
+        width: 100%;
+        
+    
+    }
+    .afbeelding{
+        background-image: url(../images/jonatan-moerman-679098-unsplash.jpg);
+        background-size: 100% 100%;
+        height: 489px;
+    
+    }
+    .leegte{
+        height: 20px;
+        width: 100%;
+    }
+    .reservatie{
+        height:140px;
+        border-radius: 10%;
+        width: 250px;
+        background-color: var(--secondary-background-color);
+        margin: 0 auto;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        opacity: 0.85;
+        font-family:var(--text-font);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    h3{
+        border-bottom: 1pt solid var(--important-color);
+        width: 100%;
+    }
+    .ingeefkaders{
+        font-size: 9pt;
+    }
+    .ingeefkaderskaders{
+        height: 13px;
+        width: 98px;
+        border: solid 1pt var(--important-color);
+    }
+    
+    .ingeefkadersbutton{
+        height: 25px;
+        width: 60px;
+        border: none;
+        background-color: var(--important-color);
+        color: white;
+        font-size: 8pt;
+    }
+    }

@@ -1,17 +1,77 @@
-.sg-title {
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: #333;
-    margin: 1rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+*{
+    margin: 10px;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    border-bottom: 1pt solid black;
+}
+#titel{
+    
+        font-family: 'Permanent Marker', cursive;
+        font-size: 50pt;
+        color: white;
+        height: 120px;
+        background-color:#242424;
+        box-sizing: content-box;
+}
+#ingeefkadersbutton{
+    background-color: #8452DA;
+    font-family: 'Open Sans', sans-serif;
+    width: 80px;
+    height: 20px;
+    border: none;
+    color: white;
+    text-align: center;
+
+}
+#emailknop{
+border: none;
+background-color:#8452DA ;
+color: white;
+padding: 2px;
+width: 70px;
+height: 20px;
+text-align: center;
 }
 
-.sg-subtitle {
-    font-size: 1rem;
-    border-bottom: solid 1px #aaa;
-    font-weight: 400;
-    color: #666;
-    text-transform: uppercase;
-    margin: 2rem 0 .5rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+#zoeken{
+    height: 25pt;
+    border: 1pt solid;
+    border-color:#8452DA;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    color: black;
+    width:200px;
+    padding: 10px;
+}
+.ingeefkaderskaders{
+    border: 1pt solid #8452DA;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#emailinput{
+    border: 2pt solid #8452DA;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+.plaats{
+    height: 56px;
+    border-bottom: 2pt solid #8452DA;
+    box-sizing: border-box;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25pt;
+    color: white;
+    background-color: #242424;
+
+}
+li{
+    display: inline;
+    text-decoration: none;
 }
